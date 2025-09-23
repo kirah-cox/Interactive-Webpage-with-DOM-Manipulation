@@ -12,9 +12,11 @@ titleButton.addEventListener('click', () => {
 });
 
 
+let itemNumber = 4;
 
-titleButton.addEventListener('click', () => {
-    const node = list.createElement('li');
-    node.textContent = 'Item 4'
-    list.getElementById('myList').appendChild(node);
+listButton.addEventListener('click', () => {
+    const listItem = document.createElement('li');
+    listItem.textContent = 'Item ' + itemNumber;
+    document.getElementById('list').appendChild(listItem);
+    itemNumber++;
 });
